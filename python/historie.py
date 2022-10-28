@@ -1,6 +1,6 @@
 
 noun = input("Insert a noun: ")
-adjective = input("Give me an adjective:")
+adjective = input("Give me an adjective: ")
 verb = input("Enter a verb (past tense): ")
 verb2 = input("Insert another verb (past tense): ")
 adjective2 = input("Give me another adjective: ")
