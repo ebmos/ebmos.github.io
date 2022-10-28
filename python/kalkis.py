@@ -19,22 +19,22 @@ while True:
     print("3. Multiplikasjon")
     print("4. Divisjon")
 
-    choice = input("Skriv inn et tall (1/2/3/4): ")
+    tall = input("Skriv inn et tall (1/2/3/4): ")
 
-    if choice in ('1', '2', '3', '4', '5'):
+    if tall in ('1', '2', '3', '4', '5'):
         num1 = float(input("Skriv inn ditt første tall: "))
         num2 = float(input("Skriv inn ditt andre tall: "))
 
-        if choice == '1':
+        if tall == '1':
             print(num1, "+", num2, "=", addition(num1, num2))
 
-        elif choice == '2':
+        elif tall == '2':
             print(num1, "-", num2, "=", subtraction(num1, num2))
 
-        elif choice == '3':
+        elif tall == '3':
             print(num1, "*", num2, "num", multiplication(num1, num2))
 
-        elif choice == '4':
+        elif tall == '4':
             print(num1, "/", num2, "num", division(num1, num2))
 
         
