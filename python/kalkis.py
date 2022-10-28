@@ -10,14 +10,16 @@ def multiplication(tall1, tall2):
 def division(tall1, tall2):
     return tall1 / tall2
 
-print("Velg operasjon:")
-print("1. Addisjon")
-print("2. Subtraksjon")
-print("3. Multiplikasjon")
-print("4. Divisjon")
+
 
 while True:
-    choice = input("Skriv inn svar(1/2/3/4): ")
+    print("Velg operasjon:")
+    print("1. Addisjon")
+    print("2. Subtraksjon")
+    print("3. Multiplikasjon")
+    print("4. Divisjon")
+
+    choice = input("Skriv inn et tall (1/2/3/4): ")
 
     if choice in ('1', '2', '3', '4', '5'):
         num1 = float(input("Skriv inn ditt første tall: "))
