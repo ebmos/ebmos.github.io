@@ -6,12 +6,12 @@ computer_wins = 0
 options = ["rock", "paper", "scissors"]
 
 while True:
-    userinput = input("Type Rock/Paper/Scissors or End to quit.").lower()
-    if userinput == "end":
+    userinput = input("Skriv Stein/Saks/Paper eller 'Slutt' for å avslutte.").lower()
+    if userinput == "slutt":
         break
 
     if userinput not in options:
-        print("Fel input, prøv på nytt.")
+        print("Feil input, prøv på nytt.")
         continue
 
     randomnumber = random.randint(0, 2)
