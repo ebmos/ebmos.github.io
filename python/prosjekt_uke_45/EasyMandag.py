@@ -48,7 +48,7 @@ r = 150
 while r <= 200:
     print(r)
     r+=5
-
+ 
 
 #Riktig output er alternativ 1 (tror jeg)
 
