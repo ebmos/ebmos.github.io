@@ -2,7 +2,11 @@ print("Welcome to my quiz.")
 
 playing = input("Wish to proceed? (y/n): ")
 if playing != "y":
-    print("Bye!")
+    playing2 = input("Are you sure? (y/n)")
+if playing2 == "y":
+    playing3 = input("Are you sure you're sure..? (y/n)")
+if playing3 == "y":
+    print("Fine.")
     quit()
 
 print("Alrighty, let's game.")

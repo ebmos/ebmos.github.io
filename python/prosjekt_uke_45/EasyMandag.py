@@ -67,4 +67,4 @@ def oddeTall():
             
      return result
        
-#I linje 62, blir variabelen oddeTall gjort om til en funksjon.  
+# I linje 62, blir variabelen oddeTall gjort om til en funksjon.
