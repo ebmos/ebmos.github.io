@@ -9,7 +9,7 @@ compWins = 0
 options = ["rock", "paper", "scissors", "quit"]
 yesno = ["yes", "no"]
 
-playing = input("Want to play? ")
+playing = input("Want to play? (yes/no) ")
 
 if playing == "no":
     print("Bye.")
@@ -20,7 +20,7 @@ if playing not in yesno:
 
 while True:
 
-    play = input("Rock paper or scissors? (enter quit to quit) ").lower()
+    play = input(Fore.WHITE + "Rock paper or scissors? (enter quit to quit) ").lower()
 
     if play not in options:
         print("Feil input.")
@@ -34,23 +34,27 @@ while True:
     compChose = options[randomnumber]
 
     if play == "rock" and compChose == "scissors":
-        print("You won! The computer chose", compChose)
+        print(Fore.GREEN + "You won!")
+        print(Fore.WHITE + "The computer chose", compChose)
         userWins += 1
     
     elif play == "paper" and compChose == "rock":
-        print("You lost. The computer chose", compChose)
+        print(Fore.GREEN + "You won!")
+        print(Fore.WHITE + "The computer chose", compChose)
         userWins += 1
 
     elif play == "scissors" and compChose == "paper":
-        print("You won! The computer")
+        print(Fore.GREEN + "You won!")
+        print(Fore.WHITE + "The computer chose", compChose)
         userWins += 1
 
     else:
-        print("You lost. The computer chose", compChose)
+        print(Fore.RED + "You lost.")
+        print(Fore.WHITE + "The computer chose", compChose)
 
     if compWins == 3:
-        print(Fore.RED + "You lost the bo3.")
+        print(Fore.RED + "You lost the bo3. Your score was", userWins)
         break
-    elif userWins == 3:
-        print(Fore.BLUE + "You won the bo3.")
+    else: 
+        print(Fore.YELLOW + "You won the bo3! Your score was", userWins)
         break
