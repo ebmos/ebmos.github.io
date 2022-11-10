@@ -2,7 +2,7 @@ import random
 import colorama
 from colorama import Fore
 
-print("Welcome to a 'Guess the number game'!")
+print("Welcome to a 'Guess the number' game!")
 
 play = input("Wish to proceed? ").lower()
 options = ["yes", "no"]
