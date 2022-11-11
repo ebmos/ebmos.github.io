@@ -18,10 +18,10 @@ while True:
 
     if number > randomNumber:
         print(Fore.RED + "Too high, go lower.")
-        continue
 
-    if number != randomNumber:
-        print(Fore.RED + "Incorrect, try again.")
-        continue
+    if number < randomNumber:
+        print(Fore.RED + "Too low, go higher.")
+
     if number == randomNumber:
         print(Fore.GREEN + "Congratulations, you won!")
+        break
