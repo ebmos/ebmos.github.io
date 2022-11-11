@@ -50,7 +50,7 @@ while r <= 200:
     r+=5
  
 
-#Riktig output er alternativ 1 (tror jeg)
+#Riktig output er alternativ 2 (tror jeg)
 
 
 '''
@@ -66,5 +66,15 @@ def oddeTall():
             result = num1/num2
             
      return result
-       
-# I linje 62, blir variabelen oddeTall gjort om til en funksjon.
+# nice
+'''
+ I linje 62, blir variabelen oddeTall gjort om til en funksjon.
+ Linje 63 betyr at num1 blir til en variabel. random.randint(1,10) betyr at pcen
+ skal velge et tilfeldig tall fra 1 - 10.
+ I linje 64 skjer det samme, men bare at pcen skal velge et tall fra 2-9.
+
+ I linje 65 står det at hvis variabelen num1 modulus (hva nå enn det er) num2 blir 0:
+    variabelen result blir skapt, og den står for num1 delt på num2
+
+    return result betyr at variabelen result (num1/num2) blir returnert i terminalen.
+ '''
