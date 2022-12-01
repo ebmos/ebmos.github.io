@@ -61,9 +61,9 @@ while True:
         compWins += 1
 
     if compWins == 3:
-        print(Fore.RED + "You lost the bo3. Your score was", userWins)
+        print(Fore.RED + "You lost. Your score was", userWins)
         quit()
     elif userWins == 3: 
-        print(Fore.YELLOW + "You won the bo3! Your score was", userWins)
+        print(Fore.YELLOW + "You won! Your score was", userWins)
         quit()
-# nice
+#nice

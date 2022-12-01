@@ -10,6 +10,9 @@ options = ["yes", "no"]
 if play not in options:
     print("Incorrect input.")
 
+if play == "no":
+    quit()
+
 while True:
 
     randomNumber = random.randint(1,25)
