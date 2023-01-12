@@ -1,0 +1,32 @@
+.thumbnail_one,
+.thumbnail_two {
+    width: 300px;
+    display: block;
+}
+
+.searchbar {
+    font-size: 20px;
+    margin-left: 12px;
+    display: block;
+}
+
+.title_one,
+.title_two {
+    width: 300px;
+}
+
+.video_preview_one,
+.video_preview_two {
+    display: inline-block;
+    width: 300px;
+    vertical-align: top;
+    margin-right: 15px;
+}
+
+.channel-1 {
+    display: inline-block;
+}
+
+.title_one {
+    display: inline-block;
+}
