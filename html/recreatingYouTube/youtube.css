@@ -29,4 +29,7 @@
 
 .title_one {
     display: inline-block;
+    width: 50px;
+    vertical-align: top;
 }
+
