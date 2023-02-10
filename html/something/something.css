@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: rgb(6, 12, 29);
+}
+
 .header {
     width: 100%;
     height: 100vh;
@@ -15,7 +19,7 @@
 }
 
 nav button {
-    background-color: #6091c5;
+    background-color: #3c4b6d;
     color: #fff;
     border: none;
     padding: 10px 15px;
@@ -26,32 +30,34 @@ nav button {
     cursor: pointer;
 }
 nav button:hover {
-    background: rgba(161, 197, 255, 0.5);
+    background: rgba(70, 75, 105, 0.5);
     transition: 0.2s;
-    color: rgb(34, 34, 34);
+    color: #6079b1;
 }
 
-
-.aboutme_txt  {
+.aboutme_txt {
     margin-top: 1em;
     margin-bottom: 1em;
     text-transform: uppercase;
     font-weight: 900;
     font-style: italic;
     font-size: 3rem;
-    color: #6091c5;
+    color: #ffffff;
     line-height: 0.8;
 }
-.aboutme_innhold {
-    color: rgb(0, 0, 0);
+.aboutme_innhold,
+.aboutme_innhold2,
+.aboutme_innhold3 {
+    color: #ffffff;
     text-align: left;
-    font-size: 20px;
+    font-size: 24px;
+    margin-top: 30px;
 }
 
 .footer {
-    margin-top: 200px;
+    margin-top: 380px;
     margin-bottom: 100px;
-    border-top: 6px solid rgb(66, 66, 66);
+    border-top: 6px solid rgb(90, 106, 148);
 }
 .footer img {
     margin-top: 20px;

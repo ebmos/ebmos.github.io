@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="something.css">
+    <link rel="stylesheet" href="contactme.css">
+    <link rel="icon" type="image/x-icon" href="https://cdn.discordapp.com/attachments/380994930904137730/1070668767522213949/p.png">
+    <script src="https://kit.fontawesome.com/07213d0cae.js" crossorigin="anonymous"></script>
     <title>Portfolio</title>
 </head>
 <body>
     
-    <nav>
+    <nav class="buttons">
         <button type="button" class="home" onclick="location.href='index.html'">
             Home
         </button>
@@ -24,5 +26,74 @@
         </button>
     </nav>
 
+    <section class="contact">
+        <div class="content">
+            <h2>Contact Me</h2>
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa-solid fa-house"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>1234 NW Bobcat Lane, St. Robert, MO 65584-5678</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>555-444-333</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>company@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form action="" onsubmit="sendEmail(); reset(); return false;">
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                        <input type="text" id="name" placeholder="Your name" required>
+                    </div>
+                    <div class="inputBox">
+                        <input type="email" id="email" placeholder="Email" required>
+                    </div>
+                    <div class="inputBox">
+                        <textarea name="" id="inputBox" placeholder="Type your message here" rows="4"></textarea>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" name="" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                Host : "smtp.elasticemail.com",
+                Username : "ebmos2021@gmail.com",
+                Password : "4E394C8F3C08D4D1928A26A82B62B73E2C55",
+                To : 'ebmos2021@gmail.com',
+                From : document.getElementById("email").value,
+                Subject : "This is the subject",
+                Body : "And this is the body"
+            }).then(
+            message => alert(message)
+            );
+        }
+    </script>
 </body>
 </html>
