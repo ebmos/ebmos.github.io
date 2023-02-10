@@ -1,5 +1,6 @@
 import sys,time,os
 
+
 # TREIG TEKST ANIMASJON GREIE TING TANG
 def slowtext(text, delay_time=0.05):
     for char in text:
