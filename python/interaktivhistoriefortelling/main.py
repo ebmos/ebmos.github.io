@@ -15,7 +15,7 @@ def slowtext(text, delay_time=0.05):
 
 # ÅPNER OG PRINTER TEKSTFILEN DER DEN FØRSTE DELEN (INTROEN) AV HISTORIEN ER
 def openfile():
-    with open("tekster/historie.txt", "r", encoding="UTF-8") as file:
+    with open("interaktivhistoriefortelling/tekster/historie.txt", "r", encoding="UTF-8") as file:
         data = ""
         for line in file:
             data += line
@@ -33,7 +33,7 @@ valg = input("\n \n VALG: a) Gå rett til skolen | b) Gå inn i kirken for å se
 # (FORTSETTELSE)
 if valg in choices:
     def openfile():
-        with open("tekster/answer1.txt", "r", encoding="UTF-8") as file:
+        with open("interaktivhistoriefortelling/tekster/answer1.txt", "r", encoding="UTF-8") as file:
             data = ""
             for line in file:
                 data += line
@@ -60,7 +60,7 @@ slowtext(valg2)
 if valg2 == "c":
     if valg in choices:
         def openfile():
-            with open("tekster/answerC.txt", "r", encoding="UTF-8") as file:
+            with open("interaktivhistoriefortelling/tekster/answerC.txt", "r", encoding="UTF-8") as file:
                 data = ""
                 for line in file:
                     data += line
@@ -78,7 +78,7 @@ elif valg2 not in choices2:
 # VALG D FORTSETTELSE
 if valg2 == "d":
     def openfile():
-            with open("tekster/answerD.txt", "r", encoding="UTF-8") as file:
+            with open("interaktivhistoriefortelling/tekster/answerD.txt", "r", encoding="UTF-8") as file:
                 data = ""
                 for line in file:
                     data += line
@@ -98,7 +98,7 @@ if valg2 == "d":
 # VALG E
 if ef_valg == "e":
     def openfile():
-        with open("tekster/valge.txt", "r", encoding="UTF-8") as file:
+        with open("interaktivhistoriefortelling/tekster/valge.txt", "r", encoding="UTF-8") as file:
             data = ""
             for line in file:
                 data += line
@@ -111,7 +111,7 @@ if ef_valg == "e":
 # VALG F
 elif ef_valg == "f":
     def openfile():
-        with open("tekster/valgf.txt", "r", encoding="UTF-8") as file:
+        with open("interaktivhistoriefortelling/tekster/valgf.txt", "r", encoding="UTF-8") as file:
             data = ""
             for line in file:
                 data += line
