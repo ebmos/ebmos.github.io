@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
@@ -9,6 +10,19 @@
     width: 100%;
     height: 100vh;
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url();
+=======
+    font-family: basic-sans, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(6, 12, 29);
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+>>>>>>> 70f4ed8a8e03d14d4e070d7a74d23f7c33991292
     background-size: cover;
     background-position: center;
     padding: 10px 8%;
@@ -16,17 +30,27 @@
 }
 
 nav button {
+<<<<<<< HEAD
     background-color: #6091c5;
     color: rgb(255, 255, 255);
+=======
+    background-color: #3c4b6d;
+    color: #fff;
+>>>>>>> 70f4ed8a8e03d14d4e070d7a74d23f7c33991292
     border: none;
     padding: 10px 15px;
     margin: 10px 10px;
     font-size: 20px;
+<<<<<<< HEAD
     border-radius: 2px;
+=======
+    border-radius: 5px;
+>>>>>>> 70f4ed8a8e03d14d4e070d7a74d23f7c33991292
     text-align: center;
     cursor: pointer;
 }
 nav button:hover {
+<<<<<<< HEAD
     background: rgba(161, 197, 255, 0.5);
     transition: 0.2s;
     color: rgb(34, 34, 34);
@@ -55,4 +79,50 @@ nav button:hover {
     width: 35px;
     height: auto;
     border-radius: 7px;
+=======
+    background: rgba(70, 75, 105, 0.5);
+    transition: 0.2s;
+    color: #6079b1;
+}
+
+.aboutme_txt {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 3rem;
+    color: #ffffff;
+    line-height: 0.8;
+}
+.aboutme_innhold {
+    color: #ffffff;
+    text-align: left;
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+.footer {
+    height: 100px; 
+    width: 100%;
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    padding-left: 100px;
+    background: linear-gradient(#060c1dbb, #060c1d 50%);
+    margin-top: 100px;
+}
+.footer hr {
+    background-color:rgb(90, 106, 148);
+    padding: 3px;
+    border: none;
+    margin-right: 100px;
+} 
+.footer img {
+    margin-top: 17px;
+    width: 35px;
+    height: auto;
+    border-radius: 7px;
+    margin-left: 10px;
+>>>>>>> 70f4ed8a8e03d14d4e070d7a74d23f7c33991292
 }

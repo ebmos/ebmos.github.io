@@ -1,0 +1,1 @@
+Det er 2 versjoner av oppgaven. Den ene er ren tekstbasert, og den andre er med bilder i stedet for tekst.

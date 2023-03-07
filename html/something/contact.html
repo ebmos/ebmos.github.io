@@ -4,12 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <link rel="stylesheet" href="contact.css">
+=======
+    <link rel="stylesheet" href="contactme.css">
+    <link rel="icon" type="image/x-icon" href="https://cdn.discordapp.com/attachments/380994930904137730/1070668767522213949/p.png">
+    <script src="https://kit.fontawesome.com/07213d0cae.js" crossorigin="anonymous"></script>
+>>>>>>> 70f4ed8a8e03d14d4e070d7a74d23f7c33991292
     <title>Portfolio</title>
 </head>
 <body>
     
+<<<<<<< HEAD
     <nav>
+=======
+    <nav class="buttons">
+>>>>>>> 70f4ed8a8e03d14d4e070d7a74d23f7c33991292
         <button type="button" class="home" onclick="location.href='index.html'">
             Home
         </button>
@@ -24,5 +34,89 @@
         </button>
     </nav>
 
+<<<<<<< HEAD
+=======
+    <section class="contact">
+        <div class="content">
+            <h2>Contact Me</h2>
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa-solid fa-house"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>1234 NW Bobcat Lane, St. Robert, MO 65584-5678</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>555-444-333</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>company@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form action="" onsubmit="sendEmail(); reset(); return false;">
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                        <input type="text" id="name" placeholder="Your name" required>
+                    </div>
+                    <div class="inputBox">
+                        <input type="email" id="email" placeholder="Email" required>
+                    </div>
+                    <div class="inputBox">
+                        <textarea name="" id="inputBox" placeholder="Type your message here" rows="4"></textarea>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" name="" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                Host : "smtp.elasticemail.com",
+                Username : "ebmos2021@gmail.com",
+                Password : "4E394C8F3C08D4D1928A26A82B62B73E2C55",
+                To : 'ebmos2021@gmail.com',
+                From : document.getElementById("email").value,
+                Subject : "This is the subject",
+                Body : "And this is the body"
+            }).then(
+            message => alert(message)
+            );
+        }
+    </script>
+    <div class="footer">
+        <hr>
+        <a href="https://linkedin.com" style="text-decoration: none;">
+            <img src="https://play-lh.googleusercontent.com/kMofEFLjobZy_bCuaiDogzBcUT-dz3BBbOrIEjJ-hqOabjK8ieuevGe6wlTD15QzOqw" alt="">
+        </a>
+        <a href="https://twitter.com" style="text-decoration: none;">
+            <img src="https://play-lh.googleusercontent.com/wIf3HtczQDjHzHuu7vezhqNs0zXAG85F7VmP7nhsTxO3OHegrVXlqIh_DWBYi86FTIGk" alt="">
+        </a>
+        <a href="https://facebook.com" style="text-decoration: none;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Facebook_F_icon.svg/640px-Facebook_F_icon.svg.png" alt="">
+        </a>
+    </div>
+>>>>>>> 70f4ed8a8e03d14d4e070d7a74d23f7c33991292
 </body>
 </html>
