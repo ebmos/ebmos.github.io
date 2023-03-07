@@ -16,7 +16,7 @@
 
 nav button {
     background-color: #6091c5;
-    color: #fff;
+    color: rgb(255, 255, 255);
     border: none;
     padding: 10px 15px;
     margin: 10px 10px;
@@ -26,9 +26,10 @@ nav button {
     cursor: pointer;
 }
 nav button:hover {
-    background: rgba(161, 197, 255, 0.5);
+    background: rgba(161, 197, 255, 0.7);
     transition: 0.2s;
     color: rgb(34, 34, 34);
+    filter: drop-shadow(4px 4px 3px #343434);
 }
 
 .aboutme_txt  {
@@ -46,7 +47,7 @@ nav button:hover {
 
 .footer {
     margin-top: 330px;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
     border-top: 6px solid rgb(66, 66, 66);
 }
 .footer img {
@@ -54,4 +55,8 @@ nav button:hover {
     width: 35px;
     height: auto;
     border-radius: 7px;
+}
+
+.footer im:hover {
+    filter: drop-shadow(4px 4px 3px #343434);
 }
