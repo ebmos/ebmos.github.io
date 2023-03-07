@@ -25,7 +25,7 @@ nav button {
     padding: 10px 15px;
     margin: 10px 10px;
     font-size: 20px;
-    border-radius: 2px;
+    border-radius: 5px;
     text-align: center;
     cursor: pointer;
 }
@@ -53,13 +53,25 @@ nav button:hover {
 }
 
 .footer {
-    margin-top: 155px;
-    margin-bottom: 100px;
-    border-top: 6px solid rgb(90, 106, 148);
+    height: 100px; 
+    width: 100%;
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    padding-left: 100px;
+    background: linear-gradient(#060c1dbb, #060c1d 50%);
+    margin-top: 100px;
 }
+.footer hr {
+    background-color:rgb(90, 106, 148);
+    padding: 3px;
+    border: none;
+    margin-right: 100px;
+} 
 .footer img {
-    margin-top: 20px;
+    margin-top: 17px;
     width: 35px;
     height: auto;
     border-radius: 7px;
+    margin-left: 10px;
 }

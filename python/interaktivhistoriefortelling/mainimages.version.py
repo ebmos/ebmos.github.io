@@ -1,12 +1,12 @@
 import sys,time,os
 from PIL import Image
 
-one = Image.open("bilder/story1.png")
-two = Image.open("bilder/story2.png")
-C = Image.open("bilder/storyC.png")
-three = Image.open("bilder/story3.png")
-E = Image.open("bilder/storyE.png")
-F = Image.open("bilder/storyF.png")
+one = Image.open("interaktivhistoriefortelling/bilder/story1.png")
+two = Image.open("interaktivhistoriefortelling/bilder/story2.png")
+C = Image.open("interaktivhistoriefortelling/bilder/storyC.png")
+three = Image.open("interaktivhistoriefortelling/bilder/story3.png")
+E = Image.open("interaktivhistoriefortelling/bilder/storyE.png")
+F = Image.open("interaktivhistoriefortelling/bilder/storyF.png")
 
 # INTRO
 
