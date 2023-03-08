@@ -17,7 +17,7 @@ body::-webkit-scrollbar{
 .header {
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.34),rgba(0,0,0,10)), url(/images/background.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.24),rgba(0,0,0,10)), url(/images/background.jpg);
   box-shadow: 0 0 30px black;
   background-size: cover;
   background-position: center;
@@ -227,55 +227,49 @@ a#scroll-btn:after {
   float: left;
 }
 
-/* SCROLL BUTTON 2 */
 
-/* #scroll-btn2 {
-  top: 0px;
-}
-a#scroll-btn2 {
-  position: absolute;
-  height: 5em;
-  width: 3.25em;
-  border: 0.2em solid #000000;
-  margin: auto;
-  left: 0;
-  right: 0;
-  bottom: 6.25em;
-  border-radius: 3em;
-}
-a#scroll-btn2:before {
-  position: absolute;
-  content: "";
-  margin: auto;
-  left: 0;
-  right: 0;
-  top: 0.5em;
-  height: 0.5em;
-  width: 0.5em;
-  background-color: #000000;
-  border-radius: 50%;
-  animation: move-down 2s infinite;
-}
-@keyframes move-down {
-  80% {
-    opacity: 0.5s;
-  }
-  100% {
-    transform: translateY(2.3em);
-    opacity: 0;
 
-  }
+
+
+/* NY SIDE */
+
+
+
+.prosjekter {
+  padding: 50px 12%;
+  font-size: 22px;
+  height: 100vh;
+  background-color: rgb(32, 32, 32);
+  filter: drop-shadow(0px 0px 6px #000000bb);
 }
-a#scroll-btn2:after {
-  position: absolute;
-  content: "Scroll ned";
-  width: 6em;
+
+.row {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px 0;
+}
+
+.text-col {
+  flex-basis: 50%;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.img-col {
+  flex-basis: 50%;
+  margin-bottom: 20px;
+}
+.img-col img {
   display: block;
-  width: 6;
-  text-align: center;
-  left: -2.0em;
-  bottom: -2.5em;
-  font-size: 1.6em;
-  color: #000000;
+  width: 100%;
+  margin: auto;
+  border-radius: 20px;
+  filter: drop-shadow(0px 0px 6px #000000bb);
+}
+
+.features h2 {
+  font-size: 20px;
   font-weight: 600;
-} */
+}

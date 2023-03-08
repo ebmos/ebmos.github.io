@@ -1,0 +1,50 @@
+
+#scroll-btn2 {
+  top: 185%;
+}
+a#scroll-btn2 {
+  position: absolute;
+  height: 5em;
+  width: 3.25em;
+  border: 0.2em solid #000000;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 6.25em;
+  border-radius: 3em;
+}
+a#scroll-btn2:before {
+  position: absolute;
+  content: "";
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0.5em;
+  height: 0.5em;
+  width: 0.5em;
+  background-color: #000000;
+  border-radius: 50%;
+  animation: move-down 2s infinite;
+}
+@keyframes move-down {
+  80% {
+    opacity: 0.5s;
+  }
+  100% {
+    transform: translateY(2.3em);
+    opacity: 0;
+  }
+}
+a#scroll-btn2:after {
+  position: absolute;
+  content: "Scroll opp";
+  width: 6em;
+  display: block;
+  width: 6;
+  text-align: center;
+  left: -2.0em;
+  bottom: -2.5em;
+  font-size: 1.6em;
+  color: #000000;
+  font-weight: 600;
+}
