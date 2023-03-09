@@ -87,12 +87,12 @@ nav {
 /* TITLE */
 
 .title h1 {
-  margin-top: 100px;
+  margin-top: 30vh;
   font-size: 100px;  
   text-align: center;
   color: #fff;
-  font-family: 'Playfair Display SC', serif;
-  filter: drop-shadow(10px 5px 3px #000000bb);
+  font-family: 'Montserrat', sans-serif;
+  filter: drop-shadow(10px 5px 2px #000000bb);
 }
 .title .signature {
   text-align: center;
@@ -104,57 +104,6 @@ nav {
   margin-top: 10px;
 }
 
-
-
-/* SCROLL BUTTON */
-
-a#scroll-btn {
-  position: absolute;
-  height: 5em;
-  width: 3.25em;
-  border: 0.2em solid #fff;
-  margin: auto;
-  left: 0;
-  right: 0;
-  bottom: 6.25em;
-  border-radius: 3em;
-}
-a#scroll-btn:before {
-  position: absolute;
-  content: "";
-  margin: auto;
-  left: 0;
-  right: 0;
-  top: 0.5em;
-  height: 0.5em;
-  width: 0.5em;
-  background-color: #fff;
-  border-radius: 50%;
-  animation: move-down 2s infinite;
-}
-@keyframes move-down {
-  80% {
-    opacity: 0.5s;
-  }
-  100% {
-    transform: translateY(2.3em);
-    opacity: 0;
-  }
-}
-a#scroll-btn:after {
-  position: absolute;
-  content: "Scroll ned";
-  width: 6em;
-  display: block;
-  width: 6;
-  text-align: center;
-  left: -2.0em;
-  bottom: -2.5em;
-  font-size: 1.6em;
-  color: #fff;
-  font-weight: 600;
-}
-
 @media screen and (max-width: 540px) {
   #navbar img {
     width: 60px;
@@ -164,9 +113,6 @@ a#scroll-btn:after {
   #navbar .socialmedia img {
     width: 20px;
     margin-top: 23px;
-  }
-  #scroll-btn a {
-    font-size: 10px;
   }
   .title h1 {
     font-size: 50px;
@@ -190,54 +136,58 @@ a#scroll-btn:after {
 }
 
 
-/* NESTE SIDE */
+/* OM MEG SIDEN */
 
-
-#om-meg {
+.om-meg {
+  padding: 50px 12%;
   height: 100vh;
-  background-color: #ffffff;
-  text-align: left;
-}
-#om-meg h1 {
-  color: rgb(88, 150, 166);
-  font-size: 70px;
-  padding-top: 90px;
-  padding-bottom: 30px;
-  text-transform: uppercase;
-  filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.395));
-  font-family: 'Montserrat', sans-serif;
-  text-align: center;
-}
-#om-meg .aboutmetext{
-  font-size: 20px;
-  color: rgb(56, 56, 56);
-  float: right;
-  margin-right: 20%;
-  margin-top: 15%;
-}
-#om-meg .aboutmetext h3 {
-  margin-bottom: 0; 
-}
-
-#om-meg img {
-  margin-top: 5%;
-  width: 25%;
-  margin-left: 10%;
+  background-color: rgb(235, 235, 235);
   filter: drop-shadow(0px 0px 6px #000000bb);
-  float: left;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10%;
 }
 
 
+.picMe {
+  flex-basis: 50%;
+}
+.picMe img {
+  width: 70%;
+  margin: auto;
+  border-radius: 20px; 
+  filter: drop-shadow(0px 0px 6px #000000bb);
+  transition: all .1s ease-in-out; 
+}
+.picMe img:hover {
+  transform: scale(1.1); 
+}
+.om-meg h2 {
+  color: rgb(88, 150, 166);
+  font-size: 45px;
+  filter: drop-shadow(3px 3px 1px rgba(0, 0, 0, 0.395));
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 10px;
+}
+.aboutmetext {
+  flex-basis: 50%;
+  font-size: 25px;
+  color: rgb(26, 26, 26);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
 
 
-
-/* NY SIDE */
-
+/* GÅ TIL PROSJEKTER SIDEN */
 
 
 .prosjekter {
   padding: 50px 12%;
-  font-size: 22px;
   height: 100vh;
   background-color: rgb(32, 32, 32);
   filter: drop-shadow(0px 0px 6px #000000bb);
@@ -248,28 +198,103 @@ a#scroll-btn:after {
   width: 100%;
   align-items: center;
   flex-wrap: wrap;
-  padding: 50px 0;
+  margin-top: 10%;
 }
 
+.prosjekter h2 {
+  color: rgb(88, 150, 166);
+  font-size: 40px;
+  filter: drop-shadow(3px 3px 1px rgba(0, 0, 0, 0.395));
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 10px;
+}
 .text-col {
   flex-basis: 50%;
-  margin-bottom: 20px;
-  color: #fff;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  font-family: 'Montserrat', sans-serif;
+}
+.text-col .prosjbtn {
+  width: 30%;
+  height: 60px;
+  background-color: rgb(88, 150, 166);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.395));
+  margin-top: 50px;
+  transition: all .1s ease-in-out; 
+}
+.prosjbtn:hover {
+  transform: scale(1.1); 
 }
 
 .img-col {
   flex-basis: 50%;
-  margin-bottom: 20px;
 }
 .img-col img {
-  display: block;
   width: 100%;
   margin: auto;
-  border-radius: 20px;
+  border-radius: 20px; 
   filter: drop-shadow(0px 0px 6px #000000bb);
+  transition: all .2s ease-in-out; 
+}
+.img-col img:hover {
+  transform: scale(1.1); 
 }
 
-.features h2 {
-  font-size: 20px;
-  font-weight: 600;
+/* SCROLL TIL TOPP KNAPP */
+
+a#scroll-btn2 {
+  position: absolute;
+  height: 3.7em;
+  width: 2.7em;
+  border: 0.2em solid #fff;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 4.25em;
+  border-radius: 3em;
+  transition: all .1s ease-in-out; 
+}
+a#scroll-btn2:hover {
+  transform: scale(1.1); 
+}
+a#scroll-btn2:before {
+  position: absolute;
+  content: "";
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 1.5em;
+  height: 0.5em;
+  width: 0.5em;
+  background-color: #fff;
+  border-radius: 50%;
+  animation: move-down 1s infinite;
+}
+@keyframes move-down {
+  10% {
+    opacity: 0.5s;
+  }
+  100% {
+    transform: translateY(-1em);
+    opacity: 0;
+  }
+}
+a#scroll-btn2:after {
+  position: absolute;
+  content: "Til toppen";
+  width: 6em;
+  display: block;
+  width: 6;
+  text-align: center;
+  left: -1.9em;
+  bottom: -2.5em;
+  font-size: 1em;
+  color: #fff;
+  font-weight: 500;
 }
