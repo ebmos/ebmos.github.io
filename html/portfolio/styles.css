@@ -145,7 +145,7 @@ nav {
   filter: drop-shadow(0px 0px 6px #000000bb);
 }
 
-.row {
+.row1 {
   display: flex;
   width: 100%;
   align-items: center;
@@ -153,26 +153,25 @@ nav {
   margin-top: 10%;
 }
 
-
 .picMe {
   flex-basis: 50%;
 }
 .picMe img {
+  display: flex;
   width: 70%;
   margin: auto;
-  border-radius: 20px; 
   filter: drop-shadow(0px 0px 6px #000000bb);
-  transition: all .1s ease-in-out; 
+  transition: all .2s ease-in-out;
 }
 .picMe img:hover {
   transform: scale(1.1); 
 }
 .om-meg h2 {
   color: rgb(88, 150, 166);
-  font-size: 45px;
+  font-size: 40px;
   filter: drop-shadow(3px 3px 1px rgba(0, 0, 0, 0.395));
   font-family: 'Montserrat', sans-serif;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .aboutmetext {
   flex-basis: 50%;
@@ -193,7 +192,7 @@ nav {
   filter: drop-shadow(0px 0px 6px #000000bb);
 }
 
-.row {
+.row2 {
   display: flex;
   width: 100%;
   align-items: center;
@@ -226,7 +225,7 @@ nav {
   border-radius: 10px;
   filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.395));
   margin-top: 50px;
-  transition: all .1s ease-in-out; 
+  transition: all .2s ease-in-out; 
 }
 .prosjbtn:hover {
   transform: scale(1.1); 
@@ -258,7 +257,7 @@ a#scroll-btn2 {
   right: 0;
   bottom: 4.25em;
   border-radius: 3em;
-  transition: all .1s ease-in-out; 
+  transition: all .s ease-in-out; 
 }
 a#scroll-btn2:hover {
   transform: scale(1.1); 
