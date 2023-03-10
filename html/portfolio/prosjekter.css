@@ -146,10 +146,10 @@ nav {
 
 .text-col h2 {
     color: rgb(88, 150, 166);
-    font-size: 35px;
-    filter: drop-shadow(3px 3px 1px rgba(0, 0, 0, 0.395));
+    font-size: 30px;
+    filter: drop-shadow(3px 3px 1px rgba(0, 0, 0, 0.13));
     font-family: 'Montserrat', sans-serif;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
 }
 .text-col2 {
     flex-basis: 50%;
