@@ -257,7 +257,7 @@ a#scroll-btn2 {
   right: 0;
   bottom: 4.25em;
   border-radius: 3em;
-  transition: all .s ease-in-out; 
+  transition: all .2s ease-in-out; 
 }
 a#scroll-btn2:hover {
   transform: scale(1.1); 
